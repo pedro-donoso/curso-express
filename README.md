@@ -12,13 +12,13 @@
 
 `npm i express`
 
-4. Run the server --> in terminal:
+4. Run the server:
 
 `node index.js`
 
 ![index](https://user-images.githubusercontent.com/68760595/211102046-0ff045a2-807f-43b8-af0b-a386fc507dd5.JPG)
 
-...in browser:
+#### In browser
 
 `http://localhost:3000/`
 
