@@ -18,7 +18,7 @@
 
 ![index](https://user-images.githubusercontent.com/68760595/211102046-0ff045a2-807f-43b8-af0b-a386fc507dd5.JPG)
 
-...in localhost:
+...in browser:
 
 `http://localhost:3000/`
 
