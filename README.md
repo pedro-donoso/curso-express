@@ -16,9 +16,9 @@
 
 4. Run the server:
 
-`node index.js`
+`nodemon index.js`
 
-![index](https://user-images.githubusercontent.com/68760595/211102046-0ff045a2-807f-43b8-af0b-a386fc507dd5.JPG)
+![index](https://user-images.githubusercontent.com/68760595/211103028-d1784c57-c84f-4a88-98c4-9212ab23e8c4.JPG)
 
 #### In browser
 
