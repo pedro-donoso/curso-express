@@ -46,3 +46,8 @@
 `http://localhost:3000/api/cursos/programacion/python`
 
 ![python](https://user-images.githubusercontent.com/68760595/211104191-82f908ef-ea98-4e06-81cb-b488039557d4.JPG)
+
+9. View selective courses and level:
+
+![intermedio](https://user-images.githubusercontent.com/68760595/211104483-910f1b59-fd3a-4c53-bf7f-4cb62fad1669.JPG)
+
