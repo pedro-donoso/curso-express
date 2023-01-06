@@ -8,9 +8,11 @@
 
 `npm init`
 
-3. Install express:
+3. Install express and nodemon:
 
 `npm i express`
+
+`npm i -g nodemon` (global)
 
 4. Run the server:
 
