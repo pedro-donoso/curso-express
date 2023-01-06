@@ -1,0 +1,22 @@
+{
+  "name": "curso-express",
+  "version": "1.0.0",
+  "description": "servidor express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedro-donoso/curso-express.git"
+  },
+  "author": "Pedro Donoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedro-donoso/curso-express/issues"
+  },
+  "homepage": "https://github.com/pedro-donoso/curso-express#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

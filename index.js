@@ -5,7 +5,7 @@ const { infoCursos } = require('./cursos.js');
 // console.log(infoCursos);
 // routing sitio principal
 app.get('/', (req, res) => {
-    res.send('Mi primer servidor con Express. Cursos');
+    res.send('Mi primer servidor con Express de Cursos');
 });
 // routing cursos
 app.get('/api/cursos', (req, res) => {
