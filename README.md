@@ -40,3 +40,9 @@
 `http://localhost:3000/api/cursos/programacion`
 
 ![programacion](https://user-images.githubusercontent.com/68760595/211103863-689d6dab-39ce-4795-bdd6-8b95417386a4.JPG)
+
+8. View selective courses:
+
+`http://localhost:3000/api/cursos/programacion/python`
+
+![python](https://user-images.githubusercontent.com/68760595/211104191-82f908ef-ea98-4e06-81cb-b488039557d4.JPG)
