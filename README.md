@@ -38,19 +38,19 @@
 ![cursos](https://user-images.githubusercontent.com/68760595/211103423-1e995e88-087a-4ae8-a9cf-42f6e8817ff8.JPG)
 
 
-7. View specific courses:
+7. Routes:
 
 `http://localhost:3000/api/cursos/programacion`
 
 ![programacion](https://user-images.githubusercontent.com/68760595/211103863-689d6dab-39ce-4795-bdd6-8b95417386a4.JPG)
 
-8. View selective courses:
+8. Routes for courses:
 
 `http://localhost:3000/api/cursos/programacion/python`
 
 ![python](https://user-images.githubusercontent.com/68760595/211104191-82f908ef-ea98-4e06-81cb-b488039557d4.JPG)
 
-9. View selective courses and level:
+9. Routes for courses and level:
 
 ![intermedio](https://user-images.githubusercontent.com/68760595/211104483-910f1b59-fd3a-4c53-bf7f-4cb62fad1669.JPG)
 
