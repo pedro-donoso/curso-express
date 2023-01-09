@@ -7,11 +7,6 @@ const { infoCursos } = require('./cursos.js');
 const routerProgramacion = express.Router();
 app.use('/api/cursos/programacion', routerProgramacion);
 
-
-
-
-
-// console.log(infoCursos);
 // routing sitio principal
 app.get('/', (req, res) => {
     res.send('Mi primer servidor con Express de Cursos');
@@ -21,12 +16,12 @@ app.get('/api/cursos', (req, res) => {
     res.send(JSON.stringify(infoCursos));
 });
 // routing cursos de programacion
-routerProgramacion.get('/api/cursos/programacion', (req, res) => {
+routerProgramacion.get('/', (req, res) => {
     res.send(JSON.stringify(infoCursos.programacion))
 })
 
 // parametros url programacion
-app.get('/api/cursos/programacion/:lenguaje', (req, res) => {
+routerProgramacion.get('/:lenguaje', (req, res) => {
     const lenguaje = req.params.lenguaje;
     const resultados = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje);
     if (resultados.length === 0) {
@@ -40,7 +35,7 @@ app.get('/api/cursos/programacion/:lenguaje', (req, res) => {
     
 });
 
-app.get('/api/cursos/programacion/:lenguaje/:nivel', (req, res) => {
+routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
     const lenguaje = req.params.lenguaje;
     const nivel = req.params.nivel;
     const resultados = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje && curso.nivel === nivel);
