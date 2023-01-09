@@ -23,7 +23,12 @@ app.get('/api/cursos/programacion/:lenguaje', (req, res) => {
     if (resultados.length === 0) {
         return res.status(404).send(`No se encontraron cursos de ${lenguaje}`);
     }
-    res.send(JSON.stringify(resultados));
+
+    if (req.query.ordenar === 'vistas') {
+        return res.send(JSON.stringify(resultados.sort((a, b) => a.vistas - b.vistas)));
+    } 
+        res.send(JSON.stringify(resultados));
+    
 });
 
 app.get('/api/cursos/programacion/:lenguaje/:nivel', (req, res) => {
