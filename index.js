@@ -7,6 +7,9 @@ const { infoCursos } = require('./cursos.js');
 const routerProgramacion = express.Router();
 app.use('/api/cursos/programacion', routerProgramacion);
 
+const routerMatematicas = express.Router();
+app.use('/api/cursos/matematicas', routerMatematicas);
+
 // routing sitio principal
 app.get('/', (req, res) => {
     res.send('Mi primer servidor con Express de Cursos');
@@ -32,7 +35,6 @@ routerProgramacion.get('/:lenguaje', (req, res) => {
         return res.send(JSON.stringify(resultados.sort((a, b) => a.vistas - b.vistas)));
     } 
         res.send(JSON.stringify(resultados));
-    
 });
 
 routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
@@ -46,11 +48,11 @@ routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
 });
 
 // routing cursos de matematicas
-app.get('/api/cursos/matematicas', (req, res) => {
+routerMatematicas.get('/', (req, res) => {
     res.send(JSON.stringify(infoCursos.matematicas))
 })
 // parametros url matematicas
-app.get('/api/cursos/matematicas/:tema', (req, res) => {
+routerMatematicas.get('/:tema', (req, res) => {
     const tema = req.params.tema;
     const resultados = infoCursos.matematicas.filter(curso => curso.tema === tema);
     if (resultados.length === 0) {
@@ -58,7 +60,6 @@ app.get('/api/cursos/matematicas/:tema', (req, res) => {
     }
     res.send(JSON.stringify(resultados));
 });
-
 
 const PUERTO = process.env.PORT || 3000;
 app.listen(PUERTO, () => {
