@@ -2,6 +2,15 @@ const express = require('express');
 const app = express();
 // desestructuracion infocursos, para importarlo directamente
 const { infoCursos } = require('./cursos.js');
+
+// Routers
+const routerProgramacion = express.Router();
+app.use('/api/cursos/programacion', routerProgramacion);
+
+
+
+
+
 // console.log(infoCursos);
 // routing sitio principal
 app.get('/', (req, res) => {
@@ -12,7 +21,7 @@ app.get('/api/cursos', (req, res) => {
     res.send(JSON.stringify(infoCursos));
 });
 // routing cursos de programacion
-app.get('/api/cursos/programacion', (req, res) => {
+routerProgramacion.get('/api/cursos/programacion', (req, res) => {
     res.send(JSON.stringify(infoCursos.programacion))
 })
 
