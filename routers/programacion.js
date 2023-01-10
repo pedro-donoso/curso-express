@@ -1,6 +1,8 @@
 const express = require('express');
 const { programacion } = require('../datos/cursos.js').infoCursos;
 const routerProgramacion = express.Router();
+// Middleware
+routerProgramacion.use(express.json());
 routerProgramacion.get('/', (req, res) => {
     res.send(JSON.stringify(programacion))
 })
@@ -24,11 +26,9 @@ routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
     }
     res.send(JSON.stringify(resultados));
 });
-
 routerProgramacion.post('/', (req, res) => {
     let cursoNuevo = req.body;
     programacion.push(cursoNuevo);
     res.send(JSON.stringify(programacion))
 });
-
 module.exports = routerProgramacion;
