@@ -28,7 +28,7 @@ routerProgramacion.get('/:lenguaje/:nivel', (req, res) => {
 routerProgramacion.post('/', (req, res) => {
     let cursoNuevo = req.body;
     programacion.push(cursoNuevo);
-    res.send(JSON.stringify())
+    res.send(JSON.stringify(programacion))
 });
 
 module.exports = routerProgramacion;
