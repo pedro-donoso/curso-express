@@ -31,7 +31,7 @@ routerProgramacion.post('/', (req, res) => {
     programacion.push(cursoNuevo);
     res.send(JSON.stringify(programacion))
 });
-
+// PUT
 routerProgramacion.put('/:id', (req, res) => {
     const cursoActualizado = req.body;
     const id = req.params.id;
@@ -43,5 +43,8 @@ routerProgramacion.put('/:id', (req, res) => {
     }
     res.send(JSON.stringify(programacion));
 });
+
+/* continuar desde aqui
+routerProgramacion.patch */
 
 module.exports = routerProgramacion;
