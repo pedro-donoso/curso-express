@@ -17,6 +17,7 @@ Content-Type: application/json
 {
     "id": 2,
     "titulo": "Python intermedio con proyectos",
+    "lenguaje": "python",
     "vistas": 123996,
     "nivel": "intermedio"
 }
